@@ -26,3 +26,10 @@ while max(cars) < race_distance:
     input("push enter to continue")
     os.system('cls')
     cars[roll_dice()-1] +=1
+
+winning_car = cars.index(max(cars)) +1
+print(f"car {winning_car} won")
+if winning_car == car_choice:
+    print("your car won")
+else:
+    print("your car didnt win")
